@@ -36,4 +36,4 @@ function getCommandArgs(prefix, content) {
     .split(' ')
     .slice(1);
 }
-bot.login('ODAxMDA5Mzk0ODU0Nzg5MTI5.YAacIQ.MUg2TKbFiKoe7v6yNlGaQw7dKjo');
+bot.login(process.env.token);
