@@ -1,14 +1,21 @@
 {
-  "name": "music-bot",
+  "name": "musikdiscordbot",
   "version": "1.0.0",
   "description": "",
   "main": "bot.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tim-THW/Musikdiscordbot.git"
+  },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tim-THW/Musikdiscordbot/issues"
+  },
+  "homepage": "https://github.com/Tim-THW/Musikdiscordbot#readme",
   "dependencies": {
     "@discordjs/opus": "^0.3.3",
     "discord.js": "^12.5.1",
