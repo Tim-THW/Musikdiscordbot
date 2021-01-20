@@ -19,13 +19,6 @@ bot.on('message', (msg)=>{
     else if (commandName ==='stop')
     return stop(msg, args);
 
-    if (commandName === 'ferlassen')
-    const vc = msg.member.voice.channel;
-    await vc.leave();
-
-    if (commandName === 'Join')
-    const vc = msg.member.voice.channel;
-    await vc.join();
 
 
 
@@ -43,3 +36,4 @@ function getCommandArgs(prefix, content) {
     .split(' ')
     .slice(1);
 }
+bot.login(process.env.token);
