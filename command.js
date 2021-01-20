@@ -11,7 +11,7 @@ async function play(msg, ...args) {
         const stream = downloadYT(video.url, {filter:  'audioonly' });
         connection.play(stream,{seek: 0, voliume: 1 });
 
-        await msg.reply(`Jetzt wird gepielt: \'${vido.title}\'.`);
+        await msg.reply(`Jetzt wird gepielt: \'${video.title}\'.`);
     }else
     await msg.reply(`Nichts gefunden`);
 }
@@ -24,7 +24,7 @@ async function findVideo(query) {
 
 async function stop(msg) {
     const vc = msg.member.voice.channel;
-    await vc.lerave();
+    await vc.leave();
 
     await msg.reply('gestoppt');
 }

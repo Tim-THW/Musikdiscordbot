@@ -1,5 +1,5 @@
 const {Client,} = require('discord.js');
-const { play, stop } = require('./commands');
+const { play, stop } = require('./command.js');
 const bot = new Client();
 
 bot.login(process.env.token);
@@ -36,4 +36,4 @@ function getCommandArgs(prefix, content) {
     .split(' ')
     .slice(1);
 }
-bot.login(process.env.token);
+bot.login('ODAxMDA5Mzk0ODU0Nzg5MTI5.YAacIQ.MUg2TKbFiKoe7v6yNlGaQw7dKjo');
