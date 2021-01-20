@@ -2,8 +2,7 @@ const {Client,} = require('discord.js');
 const { play, stop } = require('./commands');
 const bot = new Client();
 
-bot.login('ODAxMDA5Mzk0ODU0Nzg5MTI5.YAacIQ.MUg2TKbFiKoe7v6yNlGaQw7dKjo');
-
+bot.login(process.env.token);
 bot.on('ready', () => console.log("On!"));
 
 bot.on('message', (msg)=>{
