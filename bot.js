@@ -2,7 +2,7 @@ const {Client,} = require('discord.js');
 const { play, stop } = require('./command.js');
 const bot = new Client();
 
-bot.login(process.env.token);
+
 bot.on('ready', () => console.log("On!"));
 
 bot.on('message', (msg)=>{
